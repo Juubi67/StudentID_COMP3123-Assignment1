@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "8a5e9cbf-034a-40ee-91ac-a525a622bb3c",
+		"name": "Com_Ass_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16333857",
+		"_collection_link": "https://martian-sunset-58669.postman.co/workspace/BirdWorld~a506924e-4784-4703-b4c5-32713ae77b2c/collection/16333857-8a5e9cbf-034a-40ee-91ac-a525a622bb3c?action=share&source=collection_link&creator=16333857"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"sampleuser\",\r\n  \"email\": \"sampleuser1@example.com\",\r\n  \"password\": \"Ceerrefdssd\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"sampleuser@example.com\",\r\n  \"password\": \"Ceerrefdssd\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_emp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/John/Doe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"John",
+						"Doe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_emp",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Updated John\",\r\n  \"last_name\": \"Updated Doe\",\r\n  \"email\": \"updatedjohndoe@example.com\",\r\n  \"gender\": \"Male\",\r\n  \"salary\": 60000.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/emp/employees/651a7383fd8aa3848283d2d7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees",
+						"651a7383fd8aa3848283d2d7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_emp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/emp/employees?eid=651a7383fd8aa3848283d2d7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "eid",
+							"value": "651a7383fd8aa3848283d2d7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_emp",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get_emp_byid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/emp/employees/651a7383fd8aa3848283d2d7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"emp",
+						"employees",
+						"651a7383fd8aa3848283d2d7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
